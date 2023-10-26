@@ -26,7 +26,7 @@ function DynamicCompoTech() {
             <div className='icons-parent'>
                 <div className='icons'>
                     <div>
-                        <VolunteerActivismIcon onClick={handleIconClick} /><span style={{marginLeft:"50px"}}>{count}</span>
+                        <VolunteerActivismIcon className='icons-heart' onClick={handleIconClick} /><span style={{marginLeft:"50px"}}>{count}</span>
                     </div>
                     <div>
                         <ShareIcon/><span style={{marginLeft:"10px"}}>Share this article</span></div>    
@@ -55,7 +55,7 @@ function DynamicCompoTech() {
                             </div>                    
                             <p className='description'>{item.description}</p>
                             <div className='counting' style={{marginBottom:"50px"}}>
-                                <VolunteerActivismIcon onClick={handleIconClick} /><span style={{marginLeft:"20px"}}>{count}</span>
+                                <VolunteerActivismIcon className='icons-heart' onClick={handleIconClick} /><span style={{marginLeft:"20px"}}>{count}</span>
                             </div>
                             <div className='profile'>
                                 <img src={manImage} alt='img'/>
@@ -78,8 +78,12 @@ function DynamicCompoTech() {
                     return (
                     <div className='bolly-top' key={index}>
                         <Link className='child' to={`/detailstech/${item.id}`}>                     
-                            <img src={item.image} alt="not found" className='blog-image'/> 
-                            <h2>{item.heading.slice(0, 30)}...</h2>
+                            <div>
+                                <img src={item.image} alt="not found" className='blog-image'/> 
+                            </div>
+                            <div>
+                                <h2>{item.heading.slice(0, 30)}...</h2>
+                            </div>
                         </Link>
                     </div>
                     )

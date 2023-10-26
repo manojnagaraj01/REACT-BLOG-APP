@@ -26,7 +26,7 @@ function DynamicCompoFitness() {
             <div className='icons-parent'>
                 <div className='icons'>
                     <div>
-                        <VolunteerActivismIcon onClick={handleIconClick} /><span style={{marginLeft:"50px"}}>{count}</span>
+                        <VolunteerActivismIcon className='icons-heart' onClick={handleIconClick} /><span style={{marginLeft:"50px"}}>{count}</span>
                     </div>
                     <div>
                         <ShareIcon/><span style={{marginLeft:"10px"}}>Share this article</span></div>    
@@ -55,7 +55,7 @@ function DynamicCompoFitness() {
                             </div>                    
                             <p className='description'>{item.description}</p>
                             <div className='counting' style={{marginBottom:"50px"}}>
-                                <VolunteerActivismIcon onClick={handleIconClick} /><span style={{marginLeft:"20px"}}>{count}</span>
+                                <VolunteerActivismIcon className='icons-heart' onClick={handleIconClick} /><span style={{marginLeft:"20px"}}>{count}</span>
                             </div>
                             <div className='profile'>
                                 <img src={manImage} alt='img'/>

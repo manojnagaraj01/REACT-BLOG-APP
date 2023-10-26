@@ -17,7 +17,8 @@ function Home() {
               <div  className='home-latest-parent' key={index}>
                   <Link className='link-home' to={`/detailshome/${item.id}`}>
                     <div className='home-latest-child'>                      
-                      <div>
+                      <div className='latest-desp-parent'>
+                        <h4 className='latest-desp'>{item.footer}</h4>
                         <img className='home-latest-image' src={item.image} alt="not found"/> 
                         <h2 style={{margin:"20px 0px"}}>{item.heading}</h2>
                         <p style={{margin:"20px 0px"}}>{item.description.slice(0, 80)} . . .</p>
@@ -43,9 +44,10 @@ function Home() {
                         <div>
                           <img className='home-latest-article-image' src={item.image} alt="not found"/> 
                         </div>
-                        <div>
+                        <div className='latest-desp-parent'>
                           <h4>{item.heading}</h4>
                           <p style={{fontSize:"12px"}} >{item.description.slice(0, 80)} . . .</p>
+                          <h4 className='latest-desp'>{item.footer}</h4>
                         </div>
                       </div>
                     </div>
@@ -78,8 +80,9 @@ function Home() {
                         <div>
                           <img className='home-latest-top-image' src={item.image} alt="not found"/> 
                         </div>
-                        <div>
-                          <h3>{item.heading.slice(0, 50)}...</h3>
+                        <div className='latest-desp-parent'>
+                          <h5>{item.heading.slice(0, 50)}...</h5>
+                          <h4 className='latest-desp'>{item.footer}</h4>
                         </div>
                       </div>
                     </div>
@@ -101,10 +104,11 @@ function Home() {
               <div  className='home-latest-parent' key={index}>
                   <Link className='link-home' to={`/detailshome/${item.id}`}>
                     <div className='home-latest-child'>                      
-                      <div>
+                      <div className='latest-desp-parent'>
                         {/* <img className='home-latest-image' src={item.image} alt="not found"/>  */}
                         <h2 style={{margin:"20px 0px"}}>{item.heading}</h2>
                         <p style={{margin:"20px 0px"}}>{item.description.slice(0, 230)} . . .</p>
+                        <h4 className='latest-desp'>{item.footer}</h4>
                       </div>
                     </div>
                   </Link>

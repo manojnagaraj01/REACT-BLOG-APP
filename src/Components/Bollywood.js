@@ -45,7 +45,7 @@ function Bollywood() {
                         <img className='imageLatest' src={item.image} alt="not found"/> 
                       </div>
                       <div>
-                        <h2>{item.heading}</h2>
+                        <h2 style={{fontSize:"15px"}}>{item.heading}</h2>
                       </div>
                     </div>
                   </Link>

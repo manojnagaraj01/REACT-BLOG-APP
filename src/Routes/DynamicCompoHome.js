@@ -68,7 +68,7 @@ function DynamicCompoHome() {
             </div>
             <div className='back-button'>
                 <button className='back' onClick={()=>Navi('/bollywood')}>BACK</button>
-                <button className='back-home' onClick={()=>Navi('/home')}>BACK HOME</button>
+                {/* <button className='back-home' onClick={()=>Navi("/")}>BACK HOME</button> */}
             </div>
                 <h2>Latest News</h2>
             <div className='top-parent'>

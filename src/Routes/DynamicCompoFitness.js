@@ -68,7 +68,7 @@ function DynamicCompoFitness() {
             </div>
             <div className='back-button'>
                 <button className='back' onClick={()=>Navi('/fitness')}>BACK</button>
-                <button className='back-home' onClick={()=>Navi('/home')}>BACK HOME</button>
+                <button className='back-home' onClick={()=>Navi("/")}>BACK HOME</button>
             </div>
                 <h2>Fitness Top</h2>
                 <div className='top-parent'>

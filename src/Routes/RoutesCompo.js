@@ -13,6 +13,8 @@ import DynamicCompoHolly from './DynamicCompoHolly';
 import DynamicCompoFitness from './DynamicCompoFitness';
 import DynamicCompoTech from './DynamicCompoTech';
 import DynamicCompoFood from './DynamicCompoFood';
+import TocIcon from '@mui/icons-material/Toc';
+import ClearIcon from '@mui/icons-material/Clear';
 import "./Routes.css"
 import { useState } from 'react';
 
@@ -30,7 +32,7 @@ function RoutesCompo() {
             <span>Siren</span>
           </h1>
           <button className="navbar-toggle" onClick={handleNavbar}>
-            {navbarOpen ? '++' : '--'}
+            {navbarOpen ? <ClearIcon/> : <TocIcon/>}
           </button>
         </div>
         <BrowserRouter>

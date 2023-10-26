@@ -68,7 +68,7 @@ function DynamicCompoTech() {
             </div>
             <div className='back-button'>
                 <button className='back' onClick={()=>Navi('/technology')}>BACK</button>
-                <button className='back-home' onClick={()=>Navi('/home')}>BACK HOME</button>
+                <button className='back-home' onClick={()=>Navi("/")}>BACK HOME</button>
             </div>
                 <h2>Technology Top</h2>
                 <div className='top-parent'>

@@ -24,7 +24,7 @@
     align-items: center;
 }
 .home-latest-child{
-    margin-top: 25px;
+    margin: 25px 0px;
     width: 80%;
     display: flex;
     box-shadow: 2px 2px 2px 2px grey;
@@ -83,6 +83,14 @@
 .news-head{
     text-decoration: underline red 2px;
 }
+.latest-desp-parent{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.latest-desp{
+    color: cornflowerblue;
+}
 @media screen and (max-width: 600px) and (min-width:300px){
     .home-latest{
         width: 100%;
@@ -120,5 +128,7 @@
         width: 75%;
         height: 300px;
     }
-
+    .latest-desp{
+        font-size:12px;
+    }
 }

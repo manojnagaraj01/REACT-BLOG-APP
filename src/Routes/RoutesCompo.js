@@ -36,7 +36,7 @@ function RoutesCompo() {
           </button>
         </div>
         <BrowserRouter>
-          <div className={`listBar ${navbarOpen ? 'show' : ''}`}>
+          <div className={`listBar ${navbarOpen ? 'show' : '' }`}>
             <ul className="navContainer">
               <li><NavLink className="anchorTag" to='/'>Home</NavLink></li>
               <li><NavLink className="anchorTag" to='/bollywood'>Bollywood</NavLink></li>

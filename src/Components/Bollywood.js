@@ -22,8 +22,8 @@ function Bollywood() {
                         <img className='imageLatest' src={item.image} alt="not found"/> 
                       </div>
                       <div className='latest-news'>
-                        <h2>{item.heading}</h2>
-                        <p>{item.description.slice(0, 80)} . . .</p>
+                        <h2 className='latest-news-head'>{item.heading}</h2>
+                        <p className='latest-news-desp'>{item.description.slice(0, 80)} . . .</p>
                       </div>
                     </div>
                   </Link>
@@ -45,7 +45,7 @@ function Bollywood() {
                         <img className='imageLatest' src={item.image} alt="not found"/> 
                       </div>
                       <div>
-                        <h2 style={{fontSize:"15px"}}>{item.heading}</h2>
+                        <h2 className='latest-news-head'>{item.heading}</h2>
                       </div>
                     </div>
                   </Link>
@@ -57,7 +57,7 @@ function Bollywood() {
             <div className='advertisement'>
               <h2 className='news-head'>Advertisement</h2>
                 <img width={"200px"} height={"150px"} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg9ppROvd32lgEZuWK1CtEY0uqCOC1UL0jWzLYybidwnyDj2ZUTLpw&usqp=CAE&s' alt='ad img' />
-                <img width={"400px"} height={"550px"} src='https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/652c3184501321.Y3JvcCw5MzAsNzI4LDM3Nyww.jpg' alt='ad img'/>
+                <img className='adv-image'  src='https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/652c3184501321.Y3JvcCw5MzAsNzI4LDM3Nyww.jpg' alt='ad img'/>
             </div>
             </a> 
           </div>

@@ -151,7 +151,21 @@
 .latest-desp{
     color: cornflowerblue;
 }
-@media screen and (max-width: 600px) and (min-width:300px){
+.advert-image{
+    width: 400px;
+    height: 550px;
+}
+@media screen and (max-width: 950px) and (min-width:551px){
+    .home-latest-top-image{
+        width: 100px;
+        height: 100px;
+    }
+    .advert-image{
+        width: 75%;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 550px) and (min-width:300px){
     .home-image-parent{
         display: flex;
         justify-content: center;

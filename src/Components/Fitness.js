@@ -21,7 +21,7 @@ function Fitness() {
                       <div>
                         <img className='imageLatest' src={item.image} alt="not found"/> 
                       </div>
-                      <div>
+                      <div className='latest-news'>
                         <h2>{item.heading}</h2>
                         <p>{item.description.slice(0, 80)} . . .</p>
                       </div>

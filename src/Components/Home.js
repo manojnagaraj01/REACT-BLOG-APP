@@ -8,28 +8,63 @@ function Home() {
   console.log(data);
   return (
     <>
+    <div className='home-image-parent'>
+      <div className='home-image-left'>
+        {data.filter((data)=> data.cat === "image left").map((item ,index)=>{
+        return(
+          <div  className="image-container">
+            <Link to={`/detailshome/${item.id}`}>
+              <img className='home-bar-image-left' src={item.image} alt="not found"/> 
+              <div className="text-overlay">
+                <h2 >{item.heading}</h2>
+              </div>
+            </Link>
+          </div>
+        )
+      })}
+      </div>
+      <div className='home-image-right'>
+        {data.filter((data)=> data.cat === "image right").map((item ,index)=>{
+        return(
+          <div className="image-container">
+            <Link to={`/detailshome/${item.id}`}>
+              <img className='home-bar-image-right' src={item.image} alt="not found"/> 
+              <div className="text-overlay-right">
+                <h2 >{item.heading}</h2>
+              </div>
+            </Link>
+          </div>
+        )
+      })}
+      </div>
+
+    </div>
+      
+      
         <h1 className='news-head' style={{margin:"20px", color:"lightsalmon"}}>Latest</h1>
         <div className='home-latest'>
         {data.filter((data)=> data.cat === "Latest").map((item ,index)=>{
             // console.log(item);
             console.log(item.id)
             return (
-              <div  className='home-latest-parent' key={index}>
+              <div  className='home-latest-news-parent' key={index}>
                   <Link className='link-home' to={`/detailshome/${item.id}`}>
                     <div className='home-latest-child'>                      
                       <div className='latest-desp-parent'>
                         <h4 className='latest-desp'>{item.footer}</h4>
-                        <img className='home-latest-image' src={item.image} alt="not found"/> 
+                        <div className='latest-latest-image-parent'>
+                          <img className='home-latest-image' src={item.image} alt="not found"/> 
+                        </div>
                         <h2 style={{margin:"20px 0px"}}>{item.heading}</h2>
                         <p style={{margin:"20px 0px"}}>{item.description.slice(0, 80)} . . .</p>
                       </div>
                     </div>
                   </Link>
-                  {/* <hr/> */}
               </div>
               )
             })} 
         </div>
+            <hr style={{width:"100%"}}/>
         <div className='article-parent'>
           <div className='left-cont'>
             <h2 className='news-head' style={{marginTop:"20px", color:"lightsalmon"}}>Latest Article</h2>
@@ -67,8 +102,9 @@ function Home() {
                 </div>
               </a> 
             </div>
+            <hr style={{marginTop:"50px" , width:"100%"}}/>
             <div className='home-top'>
-            <h2 className='news-head' style={{marginTop:"20px", color:"lightsalmon"}}>Latest Top</h2>
+            <h2 className='news-head' style={{marginTop:"70px", color:"lightsalmon"}}>Latest Top</h2>
             {data.filter((data)=> data.cat === "Top").map((item ,index)=>{
             // console.log(item); 
             console.log(item.id)
@@ -86,7 +122,6 @@ function Home() {
                         </div>
                       </div>
                     </div>
-                    {/* <hr/> */}
                   </Link>    
               </div>
               )
@@ -95,7 +130,7 @@ function Home() {
           </div>
         </div>
         <h1 className='news-head' style={{margin:"20px", color:"lightsalmon"}}>Stories</h1>
-        <hr/>
+        <hr style={{width:"100%"}}/>
         <div className='home-latest'>
         {data.filter((data)=> data.cat === "Stories").map((item ,index)=>{
             // console.log(item);

@@ -15,6 +15,7 @@
     display: flex;
     justify-content: flex-start;
     margin: 30px auto;
+    box-shadow: 2px 2px 2px;
 }
 .child-compo-right{
     color : black ;
@@ -22,6 +23,8 @@
     display: flex;
     justify-content: flex-start;
     margin: 30px auto;
+    box-shadow: 2px 2px 2px;
+
 }
 .imageLatest{
     float: left;
@@ -42,6 +45,11 @@ hr{
 }
 a{
     color: black;
+}
+.latest-news{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 .news-head{
     text-decoration: underline red 2px;

@@ -73,7 +73,7 @@ function Home() {
             console.log(item.id)
             return (
               <div  className='home-latest-parent' key={index}>
-                  <Link className='' to={`/detailshome/${item.id}`}>
+                  <Link style={{width:"100%"}}  to={`/detailshome/${item.id}`}>
                     <div className='home-latest-child'>                      
                       <div className='single-latest-article'>
                         <div>

@@ -26,6 +26,12 @@
     box-shadow: 2px 2px 2px;
 
 }
+.imageLatest-left{
+    float: left;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
 .imageLatest{
     float: left;
     width: 100%;
@@ -61,10 +67,19 @@ a{
 .latest-news-desp{
     font-size: 15px;
 }
+/* .imageLatest-right{
+    width: ;
+} */
+.latest-news-head-right{
+    font-size: 15px;
+}
 @media screen and (max-width: 950px) and (min-width:551px){
     .parentContainer{
-        display: grid;
-        grid-template-columns: 55% 40%;
+        display: flex;
+        /* grid-template-columns: 60% 40%; */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .latest-news-head{

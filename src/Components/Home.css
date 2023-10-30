@@ -164,6 +164,29 @@
         width: 75%;
         height: 300px;
     }
+    .home-latest{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .article-parent{
+        width: 100%;
+        /* margin: 50px 0px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .right-cont{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 550px) and (min-width:300px){
     .home-image-parent{

@@ -92,7 +92,7 @@ ul{
         display: flex;
     }
     .listBar {
-        /* ... your existing styles */
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -101,7 +101,7 @@ ul{
         transition: height 0.3s ease;
   
             &.show {
-                height: 200px; /* Set an appropriate height for your listBar */
+                height: 200px; 
             }
     }
 

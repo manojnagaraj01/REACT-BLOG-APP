@@ -19,7 +19,7 @@ function Technology() {
                   <Link to={`/detailstech/${item.id}`}>
                     <div className='child-compo-left'>                      
                       <div>
-                        <img className='imageLatest' src={item.image} alt="not found"/> 
+                        <img className='imageLatest-left' src={item.image} alt="not found"/> 
                       </div>
                       <div>
                         <h2 className='latest-news-head'>{item.heading}</h2>
@@ -45,13 +45,12 @@ function Technology() {
                         <img className='imageLatest' src={item.image} alt="not found"/> 
                       </div>
                       <div>
-                        <h2  className='latest-news-head'>{item.heading}</h2>
+                        <h2 className='latest-news-head-right'>{item.heading}</h2>
                       </div>
                     </div>
                   </Link>
                   <hr/>
-              </div>
-                             
+              </div>                           
               )
             })}
             <a href="https://karnatakatourism.org/">
